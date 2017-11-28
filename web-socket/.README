@@ -1,0 +1,14 @@
+
+WebSocketComponent and WebSocketService offer the same functionality, they are totally independent, use only one of them. Which one to use? It depends on your needs. Service can live as long as the application lives. Component lives only so long as it is rendered.
+
+
+It should be able to produce such output if connected to graphene test node :-)
+
+
+Call & Response
+
+{"jsonrpc": "2.0", "method": "get_assets", "params": [["1.3.0"]]}
+[ Submit json string ]
+Call = "{\"jsonrpc\": \"2.0\", \"method\": \"get_assets\", \"params\": [[\"1.3.0\"]]}"
+Response = "{\"id\":19,\"jsonrpc\":\"2.0\",\"result\":[{\"id\":\"1.3.0\",\"symbol\":\"PPY\",\"precision\":5,\"issuer\":\"1.2.0\",\"options\":{\"max_supply\":\"1000000000000000\",\"market_fee_percent\":0,\"max_market_fee\":\"1000000000000000\",\"issuer_permissions\":0,\"flags\":0,\"core_exchange_rate\":{\"base\":{\"amount\":1,\"asset_id\":\"1.3.0\"},\"quote\":{\"amount\":1,\"asset_id\":\"1.3.0\"}},\"whitelist_authorities\":[],\"blacklist_authorities\":[],\"whitelist_markets\":[],\"blacklist_markets\":[],\"description\":\"\",\"extensions\":[]},\"dynamic_asset_data_id\":\"2.3.0\",\"dividend_data_id\":\"2.19.0\"}]}"
+© ipsqos.net web socket component 1

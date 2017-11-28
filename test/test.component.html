@@ -1,0 +1,27 @@
+<div>
+  <h1>Hello from Test</h1>
+
+  <hr>
+
+  <div>
+
+    <h4>Call & Response</h4>
+
+    <form (ngSubmit)="submit(localCall.value)" autocomplete="off">
+
+      <input type="text" name="textInput" [(ngModel)]="localCall.value" style="width: 100%; white-space: normal;" autofocus>
+
+      <button>Submit json string</button>
+
+    </form>
+
+    <pre style="width: 100%; white-space: normal;">Call = {{ localCall.value | json }}</pre>
+
+    <pre style="width: 100%; white-space: normal;">Response = {{ localResult.value | json }}</pre>
+
+    <web-socket #websocket url="ws://127.0.0.1:11011"></web-socket>
+
+  </div>
+
+</div>
+
